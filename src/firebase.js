@@ -1,8 +1,21 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyCz52scVptfgbCwr48iAJMuFOw9VKqUZsw",
-    authDomain: "whatsapp-mern-1b093.firebaseapp.com",
-    projectId: "whatsapp-mern-1b093",
-    storageBucket: "whatsapp-mern-1b093.appspot.com",
-    messagingSenderId: "786215669130",
-    appId: "1:786215669130:web:64ed29beaac7755ceacc73"
+  apiKey: "AIzaSyDLA-TGcfPsljwQP7pwEpDcr8Ys34qDEE8",
+  authDomain: "whatsapp-mern-ac1cd.firebaseapp.com",
+  projectId: "whatsapp-mern-ac1cd",
+  storageBucket: "whatsapp-mern-ac1cd.appspot.com",
+  messagingSenderId: "904811291765",
+  appId: "1:904811291765:web:8efba27beaa9a15645043c",
+  measurementId: "G-3P40J6F5WF",
   };
+
+
+  const firebaseApp = firebase.initializeApp
+  (firebaseConfig);
+  const db = firebaseApp.firestore();
+  const auth = firebase.auth();
+  const provider = new firebase.auth.GoogleAuthProvider();
+
+  export {auth, provider};
+  export default db;
