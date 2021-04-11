@@ -1,0 +1,21 @@
+1) npx create-react-app whatsapp-clone
+
+
+2)Install Material-UI's source files via npm.It takes care of injecting the CSS needed.
+      $ npm install @material-ui/core 
+
+3) npm i firebase
+
+4) npm i react-router-dom
+
+
+5)firebase init 
+	a)Select hosting:config and press enter.
+	b)Select use an existing project.
+	c)Scroll down and select your project name.
+	d)Now type build(Y/N) enter Y.
+	e)npm run build(after doing this a build folder will get created in your project folder).
+	
+6)firebase deploy
+
+
